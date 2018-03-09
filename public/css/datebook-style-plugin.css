@@ -1,0 +1,1411 @@
+/* -------------------------------------------------- 
+   Table of Contents
+----------------------------------------------------- */
+
+/*
+01. Fonts
+02. Shared Styles
+03. Elements
+04. Buttons
+05. Select input
+06. Tabs
+07. Login
+08. Registration
+09. Profile
+10. Profile Photos and Real Status Photos
+11. Search Panel
+12. Front page
+13. Thumbnails
+14. Widgets
+15. Tours page
+16. Classifieds page
+17. Featured profiles on Front page
+18. Featured and Top Ad Style
+19. Popup Messages Panel
+20. Messages Popup Window Scrollbar
+21. Footer
+22. Responsive style
+*/
+
+
+
+/* -----------------------------------------
+	01. Fonts
+----------------------------------------- */
+
+@font-face {
+	font-family: 'Engagement';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/engagement-regular.eot'); /* IE9 Compat Modes */
+	src: local('Engagement'), local('Engagement'),
+		url('../fonts/engagement-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/engagement-regular.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/engagement-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/engagement-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+
+/* -----------------------------------------
+	02. Shared Styles
+----------------------------------------- */
+
+.datebook-front-title {
+	margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 1.8;
+}
+.datebook-front-title span {
+	border-bottom: 1px solid #6d787e;
+}
+.datebook-adminpanel .form-group {
+	width:100%
+}
+.datebook-label-title {
+	font-weight:300
+}
+
+/* -----------------------------------------
+	03. Elements
+----------------------------------------- */
+
+.datebook-countries-map .datebook-countries .datebook-subcountry {
+	display:block;
+}
+.datebook-countries-map .datebook-countries .datebook-subcountry h6 {
+	margin-bottom: 10px;
+}
+.datebook-countries-map .datebook-countries .datebook-subcountry ul {
+	margin-bottom: 10px;
+}
+.datebook-countries .btn-xs {
+	font-size:inherit;
+	line-height:inherit
+}
+.datebook-countries .list-inline {
+    margin-left: 0;
+}
+.datebook-countries .list-inline li {
+    margin-right: 5px;
+	border-bottom: none
+}
+#datebook-count {
+	margin-left: 5px;
+}
+i.fa {
+	margin-right: 4px;
+}
+i.fa-venus, .datebook-countries .datebook-subcountry .fa-venus {
+	color:#E91E63
+}
+i.fa-mars, .datebook-countries .datebook-subcountry .fa-mars {
+	color:#2196F3
+}
+.datebook-register-panel i.fa-venus, 
+.datebook-register-panel i.fa-mars {
+	color: inherit
+}
+.popover i.fa-venus, .popover i.fa-mars {
+	color:#fff
+}
+.datebook-favourited {
+	margin-left: 5px;
+}
+.datebook-favourited i.fa {
+    margin-right: 0;
+}
+.alert .datebook-alert-delete {
+    color: #6d787e;
+}
+.datebook-alert-delete {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: inline-block;
+	width: 100%;
+}
+.datebook-alert-delete img {
+	margin-right: 10px;
+}
+
+
+/* -----------------------------------------
+	04. Buttons
+----------------------------------------- */
+
+.datebook-countries .datebook-subcountry .fa {
+	margin:0
+}
+.datebook-countries .datebook-subcountry .fa .btn-gender {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+/* -----------------------------------------
+	05. Select input
+----------------------------------------- */
+
+.datebook-selecter .selecter-selected {
+	background-color: #ebeef1;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 6px 10px;
+}
+.datebook-selecter .selecter-item.selected {
+	background-color: #20b426;
+	border: none;
+}
+.datebook-selecter.open .selecter-selected {
+	border: none;
+}
+.datebook-selecter .selecter-item.disabled:hover, 
+.datebook-selecter:hover .selecter-selected, 
+.datebook-selecter.disabled .selecter-item:hover {
+	background-color: #ebeef1;
+}
+
+
+/* -----------------------------------------
+	06. Tabs
+----------------------------------------- */
+
+.datebook-register-widget .nav-tabs.nav-justified > li > a {
+	margin-bottom: 0;
+	text-align: center;
+}
+.datebook-register-widget .nav-tabs.nav-justified > li > a {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.datebook-register-widget .nav-tabs.nav-justified > li:first-child > a {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.datebook-register-widget .nav-tabs.nav-justified > li:last-child > a {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.datebook-register-widget .nav-tabs.nav-justified > .active > a, 
+.datebook-register-widget .nav-tabs.nav-justified > .active > a:hover, 
+.datebook-register-widget .nav-tabs.nav-justified > .active > a:focus {
+	border: none;
+}
+
+.datebook-standard-tabs.nav {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none
+}
+.datebook-standard-tabs.nav > li {
+	position: relative;
+	display: block
+}
+.datebook-standard-tabs.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px
+}
+.datebook-standard-tabs.nav > li > a:hover, 
+.datebook-standard-tabs.nav > li > a:focus {
+	text-decoration: none;
+	background-color: #F5F5F5
+}
+.datebook-standard-tabs.nav > li.disabled > a {
+	color: #777
+}
+.datebook-standard-tabs.nav > li.disabled > a:hover, 
+.datebook-standard-tabs.nav > li.disabled > a:focus {
+	color: #777;
+	text-decoration: none;
+	background-color: transparent;
+	cursor: not-allowed
+}
+.datebook-standard-tabs.nav .open > a, 
+.datebook-standard-tabs.nav .open > a:hover, 
+.datebook-standard-tabs.nav .open > a:focus {
+	background-color: #eee;
+	border-color: #337ab7
+}
+.datebook-standard-tabs.nav .nav-divider {
+	height: 1px;
+	margin: 9px 0;
+	overflow: hidden;
+	background-color: #e5e5e5
+}
+.datebook-standard-tabs.nav > li > a > img {
+	max-width: none
+}
+.datebook-standard-tabs.nav-tabs {
+	border-bottom: 1px solid #e6e9ed;
+    background: transparent;
+}
+.datebook-standard-tabs.nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+    border-left: none;
+}
+.datebook-standard-tabs.nav-tabs > li > a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0
+}
+.datebook-standard-tabs.nav-tabs > li > a:hover {
+	border-color: #F5F5F5 #F5F5F5 #e6e9ed
+}
+.datebook-standard-tabs.nav-tabs > li.active > a, 
+.datebook-standard-tabs.nav-tabs > li.active > a:hover, 
+.datebook-standard-tabs.nav-tabs > li.active > a:focus {
+	color: inherit;
+	background-color: #fff;
+	border: 1px solid #e6e9ed;
+	border-bottom-color: transparent;
+	cursor: default
+}
+.datebook-standard-tabs.nav-tabs.nav-justified {
+	width: 100%;
+	border-bottom: 0
+}
+.datebook-standard-tabs.nav-tabs.nav-justified > li {
+	float: none
+}
+.datebook-standard-tabs.nav-tabs.nav-justified > li > a {
+	text-align: center;
+	margin-bottom: 5px
+}
+.datebook-standard-tabs.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+	top: auto;
+	left: auto
+}
+
+
+/* -----------------------------------------
+	07. Login
+----------------------------------------- */
+
+#datebook-login, #datebook-contactpanel {
+	position: relative;
+}
+#datebook-login .datebook-profilecontact, 
+#datebook-contactpanel .datebook-profilecontact {
+	display: none;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	background: #f3f4f5;
+	border: 1px solid #2B7BB9;
+	border-radius: 0 3px 3px 3px;
+	-moz-border-radius: 0 3px 3px;
+	-webkit-border-radius: 0 3px 3px 3px;
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+	-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+	z-index: 999;
+}
+
+
+/* -----------------------------------------
+	08. Registration
+----------------------------------------- */
+
+.datebook-register-links {
+	margin-right: auto;
+}
+.datebook-registerpage label i {
+	color: red;
+	font-weight: 700;
+}
+.datebook-registerpage input.input:focus {
+	border: 1px #fe028b solid;
+}
+.datebook-registerpage input.datebook-inputsmall {
+	width: 52px;
+}
+.datebook-registerpage .datebook-textarea:focus {
+	border: 1px #fe028b solid;
+}
+.datebook-registerpage div.input label:hover {
+	color: #226597;
+}
+.datebook-registerpage div.input input[type=radio], .datebook-registerpage div.input input[type=checkbox] {
+	cursor: pointer;
+	float: left;
+}
+.datebook-register-widget .nav-tabs > li:first-child {
+	border-left: none;
+}
+
+
+/* -----------------------------------------
+	09. Profile
+----------------------------------------- */
+
+.datebook-profilepage {
+	position: relative;
+}
+.datebook-profilepage .datebook-profile-main {
+	padding-top:15px;
+}
+.datebook-profilepage h1 {
+	margin-top: -5px;
+	word-break: break-all
+}
+.datebook-profilepage h2 {
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+.datebook-where-i-go-tours h2 {
+	/*margin: 0;
+	padding: 0;*/
+}
+.datebook-profiles {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 16px;
+}
+.datebook-profiles .panel {
+	margin: 0;
+}
+.datebook-profiles .datebook-profile-caption, .datebook-profile-caption {
+	position: relative;
+}
+.datebook-profiles .thumbnail {
+	border:none
+}
+.datebook-profile-caption .datebook-new-label {
+	top: 0;
+	right: 0;
+	position: absolute;
+	border-radius: 0;
+	background: rgba(4, 140, 249, 0.5);
+}
+.datebook-profile-caption .datebook-top-label {
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-radius: 0;
+}
+.datebook-profile-caption .datebook-profile-comment-caption, 
+.datebook-profile-caption .datebook-profile-more-details,
+.datebook-profile-caption .datebook-profile-pictures-caption {
+	border-radius: 0;
+	line-height: 1;
+	min-width: 10px;
+	padding: 4px 7px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background: rgb(0, 0, 0);
+	background: transparent;
+	background: rgba(0, 0, 0, 0.3);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);/*IE 5.5-7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000)";/*IE8*/
+	zoom: 1;	
+}
+.datebook-profile-caption .datebook-profile-comment-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+}
+.datebook-profile-caption .datebook-profile-pictures-caption {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #FFF;
+}
+.datebook-profile-caption .datebook-online-caption {
+	position:absolute;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	text-align:center
+}
+.datebook-profile-caption .datebook-profile-more-details {
+	position:absolute;
+	bottom: 0;
+	left: 45%;
+	right: 45%;
+	color: #FFF;
+	width: 10%;
+}
+.datebook-profile-caption .datebook-profile-more-details span {
+	padding: 0 3px;
+}
+.datebook-profile-body.over {
+	display:none;
+	position:absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+}
+.datebook-profile-image {
+	overflow: hidden;
+	position: relative;
+}
+.datebook-profile-image img {
+	height: 20px;
+	width: 20px;
+}
+.datebook-profile-heading {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.datebook-profile-heading small, .datebook-profile-heading.small {
+	font-size: 100%;
+}
+.datebook-profile-text p {
+	margin-bottom: 8px;
+}
+.datebook-aboutme {
+	font-style: italic;
+}
+.datebook-aboutme.well {
+	margin-bottom:0;
+	box-shadow:none;
+	background-color: #f8f8f8;
+    border: 1px solid #eee;
+}
+.datebook-aboutme .datebook-morecontent span, 
+.datebook-profile-text .datebook-morecontent span, 
+.datebook-addedtours .datebook-morecontent span {
+	display: none;
+}
+.datebook-profilepage .datebook-main-details {
+	margin-top: 20px;
+	margin-bottom: 32px;
+}
+.datebook-profilepage .datebook-contact-block {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.datebook-profilepage .datebook-badge-online {
+	font-size: 85%;
+	font-weight: 300;
+}
+.datebook-profilepage .datebook-profile-tabs .badge {
+	position:absolute;
+	top: -8px;
+	right: 3px;
+}
+.datebook-profilepage .nav-pills > li.active > a, 
+.datebook-profilepage .nav-pills > li.active > a:hover, 
+.datebook-profilepage .nav-pills > li.active > a:focus {
+	background-color: #d8e0e8;
+	color: inherit;
+}
+.img-thumbnail {
+	border: 1px solid #e9e9e9;
+	padding: 8px;
+}
+.datebook-defaultphoto {
+	position:relative;
+}
+.datebook-defaultphoto .datebook-frontphoto a {
+	position:relative;
+}
+.datebook-defaultphoto .datebook-frontphoto a img {
+	max-width: 100%; height: auto;width:auto !important;
+overflow:auto; 
+} 
+.datebook-addphoto-on-profile {
+	position:absolute;
+	right: 0;
+	bottom: 15%;
+	left: 0;
+	text-align:center
+}
+.datebook-thumbs {
+	position:relative;
+	width: 100%;
+	margin-top:5px;
+	clear:both;
+	display: inline-block;
+	text-align:center;
+}
+.datebook-thumbs .datebook-thumbs-add {
+	width: auto; /* Prevent height distortion in IE8. */
+	max-width: 100%; /* Add !important if needed. */
+	height: auto;    /* Add !important if needed. */
+	margin: 5px;
+	padding: 2px;
+	border-radius: 50%;
+	border: 1px solid #e9e9e9;
+	display: inline-block;
+}
+.datebook-thumbs .datebook-thumbs-add img {
+	border-radius: 50%;
+	max-width:100%; height: auto;	
+}
+@media \0screen {
+	img {
+		width: auto; /* Prevent height distortion in IE8. */
+	}
+}
+.datebook-addedtours .datebook-where-i-go-tours {
+	background: #eaeaea url("../images/gray_pattern.gif") repeat scroll 0 0;
+}
+.datebook-addedtours .datebook-where-i-go-tours .list-group {
+	margin-bottom:0;
+}
+.datebook-addoptions-profile {
+	margin: 0;
+	border:none;
+}
+.datebook-addoptions-profile .datebook-profile-otherdetails {
+	background: #eaeaea url("../images/gray_pattern.gif") repeat scroll 0 0;
+}
+.datebook-profile-comments .media {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	margin-top: 14px;
+	padding-bottom: 10px;
+}
+.datebook-profile-comments .thumbnail, .datebook-classifieds-page .thumbnail {
+	border: 1px solid #e9e9e9;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: none;
+	margin: 0;
+	padding: 2px;
+	width: 50px;
+}
+.datebook-charcount {
+	margin-top: 5px;
+}
+.datebook-charcount .progress {
+    height: 5px;
+    margin-bottom: 0;
+}
+
+.datebook-addedtours .list-group-item {
+	background: transparent;
+}
+.datebook-header-user-panel .navbar-default .navbar-nav > li > a > sup {
+	position: absolute;
+	top: .9em;
+	left: .6em;
+}
+
+
+/* -----------------------------------------
+	10. Profile Photos and Real Status Photos
+----------------------------------------- */
+
+.datebook-photocontainer .datebook-upload-photos-button {
+	padding-top: 3px;
+}
+.datebook-photocontainer h3 {
+	font-weight: 400;
+}
+.datebook-photocontainer .datebook-img-single span, .datebook-photocontainer .datebook-realstatusphoto span {
+	background: #e6e9ed;
+	float: left;
+	padding: 5px;
+	position: relative;
+}
+.datebook-photocontainer .datebook-img-single span.selected {
+	background: linear-gradient(45deg, #F90 5%, #fff8d1 25%, #F90 48%, #fff8d1 71%, #F90 88%);
+	background: -moz-linear-gradient(45deg, #F90 5%, #fff8d1 25%, #F90 48%, #fff8d1 71%, #F90 88%);
+	background: -ms-linear-gradient(45deg, #F90 5%, #fff8d1 25%, #F90 48%, #fff8d1 71%, #F90 88%);
+	background: -o-linear-gradient(45deg, #F90 5%, #fff8d1 25%, #F90 48%, #fff8d1 71%, #F90 88%);
+	background: -webkit-gradient(linear, 45deg, color-stop(5%, #F90), color-stop(25%, #fff8d1), color-stop(48%, #F90), color-stop(71%, #fff8d1), color-stop(88%, #F90));
+	background: -webkit-linear-gradient(45deg, #F90 5%, #fff8d1 25%, #F90 48%, #fff8d1 71%, #F90 88%);
+	background-color: #F90;
+}
+.datebook-photocontainer .datebook-img-single label {
+	font-weight: 300;
+	padding: 0 5px;
+}
+.datebook-photocontainer img {
+	padding: 0;
+	vertical-align: middle;
+}
+.datebook-photocontainer .datebook-img-popup, #datebook-error-div {
+	display: none;
+}
+#datebook-imageform {
+	min-height: 38px;
+}
+.datebook-file {
+	height: 30px;
+	margin-bottom: 0;
+}
+.datebook-uploaded-images {
+	height: 30px;
+	padding: 0;
+}
+.datebook-uploaded-images #datebook-error-div {
+	color: #ff0000;
+}
+
+
+/* -----------------------------------------
+	11. Search Panel
+----------------------------------------- */
+
+.datebook-front-search-panel h1 {
+	color: #fff;
+	font-family: Engagement, "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 70px;
+	line-height: 1.2;
+	margin-top: 50px;
+	margin-bottom: 110px;
+	text-align: center;
+}
+.form-inline .datebook-front-search {
+	box-shadow: none;
+}
+.datebook-front-search-panel .datebook-front-search {
+	margin-bottom: 55px;
+	min-width: 163px;
+}
+.front-search label {
+	font-weight: 300;
+}
+.datebook-front-search .panel-body {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.datebook-not-front-page.datebook-front-search .panel-body {
+	background-color: #e6e9ed;
+}
+.datebook-front-search .form-group {
+	padding-left: 3px;
+	padding-right: 3px;
+	width: 100%;
+}
+.datebook-front-search .datebook-input-age, 
+.datebook-country-form, 
+.datebook-citymenu, .datebook-purpose-group {
+	width: 100%;
+}
+.datebook-front-search .panel-body .datebook-search-btn {
+	font-size: 14px;
+	height: 38px;
+}
+.datebook-front-search .datebook-selecter .selecter-selected, 
+.datebook-front-search .panel-body .datebook-search-btn, 
+.form-control[disabled], 
+.form-control[readonly], 
+fieldset[disabled] .form-control,
+
+.datebook-front-search .btn-group .btn {
+	background-color: #FFF;
+}
+.datebook-front-search .datebook-gender-input label {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.datebook-front-search .datebook-age-form .form-control {
+	width: 100%;
+	text-align: center;
+}
+.datebook-front-search .panel-body .btn-search {
+	background-color: #FFC107;
+	border: none;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+#datebook-advancedsearch .form-control, 
+#datebook-advancedsearch .selecter .selecter-selected, 
+#datebook-advancedsearch .btn {
+	font-size: 13px;
+	height: auto;
+}
+#datebook-header .datebook-front-search {
+	position: inherit;
+	border: none;
+	background: rgba(0, 0, 0, 0.5);
+	background: linear-gradient(38deg, rgba(0, 0, 0, 0.6) 0%, #000 50%, #595959 100%);
+	background: -moz-linear-gradient(38deg, rgba(0, 0, 0, 0.6) 0%, #000 50%, #595959 100%);
+	background: -ms-linear-gradient(38deg, rgba(0, 0, 0, 0.6) 0%, #000 50%, #595959 100%);
+	background: -o-linear-gradient(38deg, rgba(0, 0, 0, 0.6) 0%, #000 50%, #595959 100%);
+	background: -webkit-gradient(linear, 38deg, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(50%, #000000), color-stop(100%, #595959));
+	background: -webkit-linear-gradient(38deg, rgba(0, 0, 0, 0.6) 0%, #000 50%, #595959 100%);
+}
+#datebook-header .pull-left .datebook-front-search {
+	background: -moz-linear-gradient(128deg, rgba(0, 0, 0, 0.6) 0%, #000000 50%, #595959 100%);/* FF3.6+ */
+background: -webkit-gradient(linear, 128deg, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(50%, #000000), color-stop(100%, #595959));/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(128deg, rgba(0, 0, 0, 0.6) 0%, #000000 50%, #595959 100%);/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(128deg, rgba(0, 0, 0, 0.6) 0%, #000000 50%, #595959 100%);/* Opera 11.10+ */
+background: -ms-linear-gradient(128deg, rgba(0, 0, 0, 0.6) 0%, #000000 50%, #595959 100%);/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#595959', GradientType='1'); /* for IE */
+background: linear-gradient(322deg, rgba(0, 0, 0, 0.6) 0%, #000000 50%, #595959 100%);/* W3C */
+}
+
+
+/* -----------------------------------------
+	12. Front page
+----------------------------------------- */
+
+.datebook-front-search-panel label.datebook-label-title {
+	color: #fff;
+}
+.datebook-front-search .form-control {
+	border: none;
+}
+.datebook-front-search .datebook-age-form > .irs:after {
+	border: solid transparent;
+	border-bottom-color: #fff;
+	border-color: rgba(255, 255, 255, 0);
+	border-width: 6px;
+	bottom: 100%;
+	content: " ";
+	height: 0;
+	left: 50%;
+	margin-left: -6px;
+	position: absolute;
+	width: 0;
+}
+.datebook-front-search .datebook-age-form > .irs {
+	background-color: #FFF;
+	border: 10px solid #FFF;
+	border-top: none;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: none;
+	height: 60px;
+	left: -40px;
+	position: absolute;
+	right: -40px;
+	top: 67px;
+	z-index: 3;
+}
+.datebook-front-search .datebook-age-form > .irs .irs {
+	background-color: #FFF;
+}
+.datebook-front-search-panel .btn-default:hover, 
+.input-group-btn:hover .btn-default, 
+.datebook-front-search .open .dropdown-toggle.btn-default, 
+.datebook-front-search-panel .btn-default:focus, 
+.datebook-front-search-panel .btn-default:active, 
+.datebook-front-search-panel .btn-default.active,
+.datebook-front-search .btn-default:hover, 
+.datebook-front-search .btn-default:focus, 
+.datebook-front-search .btn-default:active, 
+.datebook-front-search .btn-default.active,
+.datebook-register-panel .btn-default:hover, 
+.datebook-register-panel .btn-default:focus, 
+.datebook-register-panel .btn-default:active, 
+.datebook-register-panel .btn-default.active, 
+.datebook-front-search .btn-default:active:hover, 
+.datebook-front-search .btn-default.active:hover, 
+.datebook-front-search .open>.dropdown-toggle.btn-default:hover, 
+.datebook-front-search .btn-default:active:focus, 
+.datebook-front-search .btn-default.active:focus, 
+.datebook-front-search .open > .dropdown-toggle.btn-default:focus, 
+.datebook-front-search .btn-default:active.focus, 
+.datebook-front-search .btn-default.active.focus, 
+.datebook-front-search .open>.dropdown-toggle.btn-default.focus,
+
+.datebook-registerbox .bootstrap-select .btn-default:hover, 
+.datebook-registerbox .bootstrap-select .btn-default:focus, 
+.datebook-registerbox .bootstrap-select .btn-default:active, 
+.datebook-registerbox .bootstrap-select .btn-default.active {
+	background-color: #4CAF50;
+	border-color: #4CAF50;
+	color: #fff;
+}
+.datebook-front-search .panel-body .input-group-btn .btn {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+.datebook-countries-overlay {
+	display:none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    z-index: 9888;
+}
+.datebook-dropdowncountry {
+    position: absolute;
+    display: block;
+	top:50%;
+	left:10%;
+	right: 10%;
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+    max-width: 800px;
+    min-width: 100px;
+	min-height: 430px;
+    margin: 0 auto;
+	padding: 20px 30px 20px 20px;
+	background-color: #fff;
+	border: 5px solid #4caf50;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	z-index: 9889;
+}
+
+.datebook-profile-country .datebook-dropdowncountry  {
+	border: 3px solid #e6e9ed;
+}
+.datebook-profile-country .input-group-btn .btn-default {
+	border: 1px solid #e9e9e9 !important;
+	border-right:none !important;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+.datebook-profile-country .input-group-btn:hover .btn-default {
+	background-color: #e6e9ed;
+	border-color: #e6e9ed;
+	color: inherit;
+}
+
+.datebook-dropdowncountry .datebook-countrybox {
+	position:relative
+}
+.datebook-dropdowncountry .datebook-city-proccess, 
+.datebook-dropdowncountry .datebook-region-proccess, 
+.datebook-dropdowncountry .datebook-country-proccess {
+	display:none;
+}
+.datebook-dropdowncountry .datebook-loadigimage {
+	min-height: 260px;
+	text-align: center;
+}
+.datebook-dropdowncountry .datebook-countrymenu {
+	max-height: 330px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.datebook-dropdowncountry a {
+	display: inline-block;
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+
+.datebook-front-search .datebook-dropdowncountry .btn-close-country,
+.datebook-profile-country .datebook-dropdowncountry .btn-close-country {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display:block;
+	height: 26px;
+	padding: 3px 10px;
+	border-radius: 0;
+	border-bottom-left-radius: 4px;
+	background-color: #e6e9ed
+}
+.datebook-front-search .panel-body .datebook-dropdowncountry .btn-close-country:hover {
+	background-color: #4caf50
+}
+
+
+/* -----------------------------------------
+	13. Thumbnails
+----------------------------------------- */
+
+.datebook-kaleidoscope .thumbnail {
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.datebook-profiles .thumbnail {
+	padding:0;
+	border:none;
+	background-color: #f5f5f5
+}
+
+
+/* -----------------------------------------
+	14. Widgets
+----------------------------------------- */
+
+.datebook-related-profiles-bycity-widget .panel-body {
+	padding: 0 13px;
+}
+.datebook-related-profiles-bycountry-widget .panel-heading {
+	border-bottom: 1px solid #e9e9e9;
+}
+.datebook-related-profiles-bycountry-widget .thumbnail {
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-right: 1px solid #e9e9e9;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+}
+.datebook-related-profiles-bycountry-widget .thumbnail.last {
+	border: none;
+}
+.datebook-related-profiles-bycountry-widget .thumbnail:hover {
+	border-color: #e9e9e9;
+}
+.datebook-tours-widget .panel-body, 
+.datebook-classifieds-widget .panel-body, 
+.datebook-related-profiles-bycity-widget .panel-body, 
+.datebook-featured-profile-widget .panel-body, 
+.datebook-related-profiles-bycountry-widget .panel-body, 
+.datebook-latest-profiles-images-widget .panel-body,
+.datebook-latest-profiles-widget .panel-body {
+	padding: 0;
+}
+.datebook-related-profiles-bycity-widget .panel-body .panel-body, 
+.datebook-featured-profile-widget .panel-body .panel-body, 
+.datebook-tours-widget .list-group-item, 
+.datebook-edit-sidebar .list-group-item,
+.datebook-latest-profiles-widget .list-group-item {
+	padding: 10px 15px;
+}
+.datebook-register-widget > .panel-body {
+	padding:0;
+}
+.datebook-register-widget .btn-group > .btn:first-child {
+	border-right: 1px solid #FFF !important;
+	box-shadow: none;
+}
+.datebook-register-widget .nav-tabs > li.active {
+	border-bottom: 1px solid #FFF !important;
+}
+.datebook-register-widget ul li:last-child {
+	border-bottom: 1px solid #e9e9e9;
+}
+.datebook-register-widget .nav-tabs.nav-justified > li > a {
+	font-size: 20px;
+}
+.datebook-register-widget .nav-tabs > li > a {
+	color: #8c8c8c;
+}
+.datebook-register-widget ul li {
+    padding: 0;
+}
+.datebook-register-widget .form-group {
+    margin-bottom: 5px;
+}
+.datebook-related-profiles-bycity-widget hr {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.datebook-related-profiles-bycountry-widget {
+	border-color: #e6e9ed;
+}
+.datebook-related-profiles-bycountry-widget h4 {
+	border-bottom: 1px solid #e6e9ed;
+	margin: 0;
+	padding: 15px;
+}
+.datebook-tours-widget .thumbnail, 
+.datebook-related-profiles-bycity-widget .thumbnail, 
+.datebook-latest-profiles-images-widget .thumbnail,
+.datebook-latest-profiles-widget .thumbnail {
+	border: 1px solid #e9e9e9;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: none;
+	margin: 2px;
+	padding: 2px;
+	width: auto;
+}
+.datebook-latest-profiles-images-widget .latest-profile-img {
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin: 2px;
+	padding: 0;
+	width: auto;
+}
+.datebook-latest-profiles-images-widget .latest-profile-img .img-circle {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.datebook-tours-widget .thumbnail,
+.datebook-latest-profiles-widget .thumbnail {
+	margin: 0;
+	margin-right: 8px;
+	width: 50px;
+}
+.datebook-tours-widget p {
+	margin-bottom: 3px;
+}
+.datebook-featured-profile-widget {
+	text-align:center;
+}
+.datebook-featured-profile-widget .thumbnail {
+	border: none;
+	padding: 0;
+}
+.datebook-featured-profile-widget .panel-heading, 
+.datebook-featured-profile-widget .panel-body {
+	background-color: #FFF;
+}
+.datebook-featured-profile-widget .img-responsive a > img, 
+.datebook-featured-profile-widget .img-responsive > img {
+	margin: 0 auto;
+	text-align: center;
+	width: auto;
+}
+.datebook-related-profiles-bycity-widget .thumbnail img, 
+.datebook-classifieds-widget .thumbnail img, 
+.datebook-tours-widget .thumbnail img, 
+.datebook-profile-comments .thumbnail img, 
+.datebook-classifieds-page .datebook-class-author .thumbnail img,
+.datebook-latest-profiles-widget .thumbnail img {
+	border-radius: 90px;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+}
+.datebook-classifieds-widget .datebook-author-image {
+	padding:10px;
+	text-align:center;
+	background-color: #e6e9ed;
+}
+.datebook-classifieds-widget .thumbnail {
+	width: 50px;
+	border: 1px solid #e9e9e9;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: none;
+	margin: 2px auto;
+	padding: 2px;
+}
+.datebook-classifieds-widget .panel-body .panel-body {
+	padding:15px;
+}
+.datebook-comments-widget ul li {
+	padding: 0 0 5px;
+}
+.datebook-comments-widget .media-object {
+	width: 40px;
+	height: 40px;
+	border-radius: 90px;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+}
+.datebook-comments-widget .media:last-child {
+	margin-bottom:0;
+}
+.datebook-categories-widget ul li {
+	padding: 0;
+	border-bottom: 1px solid #eee;
+}
+.datebook-categories-widget ul li:last-child {
+    border-bottom: none;
+}
+.datebook-categories-widget ul li a {
+	display:block;
+	padding: 7px 0;
+}
+.datebook-posts-widget .media {
+    margin-bottom: 0;
+}
+
+
+/* -----------------------------------------
+	15. Tours page
+----------------------------------------- */
+
+.datebook-tour-search {
+	min-width: 170px;
+}
+.datebook-tours-body {
+	position:relative;
+	display: inline-block;
+	width: 100%;
+}
+.datebook-tours-body .datebook-tour-time {
+	display:block;
+	margin-top:10px
+}
+.datebook-tours-body .datebook-tour-content::before {
+    border-style: solid;
+    border-width: 8px;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 12px;
+    width: 0;
+	border-color: transparent #F3F3F3 transparent transparent;
+    left: -16px;
+}
+.datebook-tours-body .datebook-tour-content {
+	padding: 10px;
+	background-color: #F3F3F3;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.datebook-tours-body .label {
+    font-size: 100%;
+    font-weight: 300;
+    padding: .1em .5em .2em;
+}
+
+
+/* -----------------------------------------
+	16. Classifieds page
+----------------------------------------- */
+
+.datebook-classifieds-page .datebook-class-author .thumbnail {
+	border: 1px solid #e9e9e9;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: none;
+	margin-right: 8px;
+	padding: 2px;
+}
+.datebook-classifieds-body::before {
+    border-style: solid;
+    border-width: 8px;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 15px;
+    width: 0;
+    border-color: transparent transparent transparent #F3F3F3;
+    right: -1px;
+}
+.datebook-classifieds-body {
+	padding: 10px;
+	background-color: #F3F3F3;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.datebook-classifieds-body .datebook-classifieds-heading {
+	font-size: 110%;
+	font-weight: 400;
+}
+.datebook-classifieds-page .datebook-class-author {
+	font-size: 110%;
+}
+
+/* -----------------------------------------
+	17. Featured profiles on Front page
+----------------------------------------- */
+.datebook-front-container .datebook-featured-front {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: #000;
+}
+.datebook-featured-front .datebook-featured-front-header .thumbnail {
+    border: none;
+    padding: 2px;
+	background: transparent;
+}
+.datebook-featured-front .panel-heading, .datebook-top-profiles .panel-heading {
+	border-bottom: 1px solid #e9e9e9;
+}
+.datebook-featured-front .thumbnail {
+	border-bottom: none;
+}
+.datebook-top-profiles .datebook-profile-caption a img {
+	margin: auto;
+}
+
+
+/* -----------------------------------------
+	18. Featured and Top Ad Style
+----------------------------------------- */
+
+.datebook-featured-style {
+	position:relative;
+	background: #fff url("../images/patterns/bg-featured-snow.jpg") repeat left top;
+}
+.datebook-featured-style.mini .thumbnail {
+	border:none
+}
+.datebook-profiles .datebook-panel-body-featured {
+	padding-top: 10px;
+	padding-bottom: 1px;
+}
+.datebook-featured-style.mini .datebook-panel-body-featured, .datebook-featured-style .datebook-featured-block {
+	background: #fff;
+	background: transparent;
+	background: rgba(255, 255, 255, 0.9);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9*/
+}
+
+
+/* -----------------------------------------
+	19. Popup Messages Panel
+----------------------------------------- */
+
+.datebook-panel-messages {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background-color: #FFF
+}
+.datebook-panel-messages .panel {
+	margin: 0;
+	border:none;
+}
+.datebook-panel-messages .list-group {
+	background: #f5f5f5;
+	height: 280px;
+	margin-bottom: 0;
+	overflow-y: hidden;
+}
+.datebook-panel-messages .list-group .list-group-item {
+	background: none;
+}
+.datebook-panel-messages .list-group .list-group-item p.datebook-message-user {
+	margin-bottom: 4px;
+}
+.datebook-panel-messages .list-group .list-group-item p.datebook-message-user .chat-time {
+}
+.datebook-panel-messages .list-group .list-group-item p.datebook-message-body {
+	margin-bottom: 0;
+}
+#datebook-messagebox {
+	float:left; 
+	width:80%; 
+	height:55px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.datebook-panel-messages .datebook-message-form .datebook-chat-submit {
+	float:left;
+	width:20%;
+	height:55px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0
+}
+.datebook-panel-messages .list-group .list-group-item.datebook-bg-recipient {
+	background-color: #EFF0F1;
+}
+.datebook-panel-messages .list-group .list-group-item.datebook-bg-sender {
+	background-color: #F4F5F7;
+}
+.datebook-panel-messages .list-group .list-group-item.datebook-bg-warning {
+	background-color: #FCE5A7;
+	font-size: 11px;
+	padding: 5px;
+}
+.datebook-panel-messages p {
+	margin-bottom: 5px;
+}
+.datebook-panel-messages .list-group .list-group-item .text-green {
+	color:#21693D
+}
+.datebook-panel-messages .datebook-badge-online {
+	font-weight: 300;
+}
+.datebook-panel-messages .datebook-show-button {
+	margin-top: -22px;
+}
+.datebook-panel-messages .datebook-chatters-sidebar {
+	height: 468px;
+	overflow-y: scroll;
+}
+.datebook-panel-messages .datebook-chatters-sidebar .media {
+	margin: 0;
+	padding: 5px 10px;
+}
+.datebook-panel-messages .datebook-chatters-sidebar .media.active {
+	background-color:#f4f4f4
+}
+
+/* -----------------------------------------
+	20. Messages Popup Window Scrollbar
+----------------------------------------- */
+
+#datebook-list-messages::-webkit-scrollbar-track {
+	background-color: #F3F3F3;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#datebook-list-messages::-webkit-scrollbar {
+	background-color: #F3F3F3;
+	width: 14px;
+}
+#datebook-list-messages::-webkit-scrollbar-thumb {
+	background-color: #737D8A;
+}
+
+
+/* -----------------------------------------
+	21. Footer
+----------------------------------------- */
+
+.datebook-modal-footer {
+	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
+	text-align: left;
+}
+.datebook-footerbox.datebook-featured-profile-widget .panel-heading, .datebook-footerbox.datebook-featured-profile-widget .panel-body {
+	padding: 10px 15px;
+}
+.datebook-footerbox.datebook-related-profiles-bycity-widget .panel-body {
+	padding: 10px 0;
+}
+.datebook-footerbox.datebook-register-widget {
+	border: 1px solid #e9e9e9;
+}
+.datebook-footerbox.datebook-tours-widget .panel-heading {
+	border-bottom: 1px solid #eee;
+}
+.datebook-footerbox.datebook-tours-widget .list-group-item {
+	padding-left: 0;
+	padding-right: 0;
+}
+.datebook-footer-copyright {
+	color: #959EAC;
+}
+
+
+/* -----------------------------------------
+	22. Responsive style
+----------------------------------------- */
+
+@media screen and (max-width: 767px) {
+	
+	.datebook-front-search-panel h1 {
+		margin-bottom: 90px;
+	}
+	.datebook-front-search .form-control, .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+		text-align:center
+	}
+	.datebook-front-search .datebook-age-form > .irs {
+		left: 3px;
+		right: 3px;
+	}
+	.datebook-register-links > li {
+		display: table-cell;
+		text-align: center;
+		width: 1%;
+	}
+	.datebook-classifieds-body::before {
+		left: 32px;
+		border-color: #f3f3f3 transparent transparent transparent;
+		bottom: -15px;
+		right: auto;
+		top: auto;
+	}
+	.datebook-tours-body .datebook-tour-content::before {
+	    top: -15px;
+		border-color: transparent transparent #f3f3f3 transparent;
+    	left: 24px;
+	}
+
+}
