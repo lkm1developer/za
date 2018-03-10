@@ -47,18 +47,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255|unique:users',
+            'username' => 'required|min:4|max:255|unique:users',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
-			'firstname' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
-            'address1' => 'required|string|max:255',
-            'address2' => 'required|string|max:255',
-            'city' => 'required|string|max:255',
-            'state' => 'required|string|max:255',
-            'country' => 'required|string|max:255',
-            'zip' => 'required|numeric|',
-            'phone' => 'required|numeric|',
+            'password' => 'required|min:6',
+			'name' => 'required|string|max:255',
+            'gender' => 'required|string|max:255',
+            'sexualorientation' => 'required|string|max:255',
+            'day' => 'required|numeric|max:31|min:1',
+            'month' => 'required|numeric|max:12|min:1',
+            'year' => 'required|numeric|min:1900|max:2100',
+            
+            
         ]);
     }
 
@@ -70,19 +69,22 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+      
         return User::create([
-            'name' => $data['name'],
+            'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-			'firstname' => $data['firstname'],
-            'lastname' => $data['lastname'],
-            'address1' => $data['address1'],
-            'address2' => $data['address2'],
+			'name' => $data['name'],
+            'gender' => $data['gender'],
+            'sexualorientation' => $data['sexualorientation'],
+            'day' => $data['day'],
+            'month' => $data['month'],
+            'year' => $data['year'],
+            'dob' => strtotime($data['day'].'-'.$data['month'].'-'.$data['year']),
             'city' => $data['city'],
             'state' => $data['state'],
             'country' => $data['country'],
-            'zip' => $data['zip'],
-            'phone' => $data['phone'],
+            
         ]);
     }
 }

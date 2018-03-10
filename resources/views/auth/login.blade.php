@@ -46,7 +46,7 @@
 									<label for="user_pass" class=" control-label">Password</label>
 									</div>
 									<div class="col-sm-6">
-										<input name="pwd" id="user_pass" value="" class="form-control" type="password" value="" required autofocus>
+										<input name="password" id="user_pass" value="" class="form-control" type="password" value="" required autofocus>
 									</div>
 									@if ($errors->has('password'))
 										<span class="help-block">
